@@ -20,7 +20,7 @@ const ProductCard = () => {
     >
         {foods.map((el, index) =>(<SwiperSlide key={index}>
         <div className=" flex items-center justify-center bg-[#f9f7ed]">
-          <div className=" border-4 border-[#c2b59d] w-[166px] bg-white rounded-md shadow-md overflow-hidden relative">
+          <div className="block relative border-4 border-[#c2b59d] w-[166px] bg-white rounded-md shadow-md overflow-hidden ">
             {/* Badge */}
             <div className="absolute rotate-45 py-1 px-10 top-3  right-[-45px] bg-green-100 text-green-600 text-sm font-semibold  rounded-full">
               Non Veg
@@ -42,14 +42,17 @@ const ProductCard = () => {
               </h2>
 
               {/* Button */}
-              <button className="bg-[#b88f40] border-4 border-[#d1c1a6] py-2 px-4 rounded-full text-white text-[14px]">
+              <button className="bg-[#b88f40] border-4 border-[#d1c1a6] py-2 px-4 rounded-full text-white text-[13px]">
                 Select Options
               </button>
             </div>
 
             {/* Price Tag */}
-            <div className="transform translate-x-[100px] w-[70px] bg-green-500 text-white font-bold px-3 text-sm rounded-md mb-5 py-3 border-l-4 border-green-900">
+            <div className="float-right  mr-[-15px] text-white font-bold px-3 text-sm rounded-md mb-5 py-3 flex">
+                <img src="/price-tag-before.png"></img>
+            <div className="bg-[#a0bd57] flex items-center pr-4 pl-2">
               ${el.price}
+            </div>
             </div>
           </div>
         </div>
