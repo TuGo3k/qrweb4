@@ -10,6 +10,7 @@ import ProductCard from "../components/ProductCard";
 import {Card} from "../components/Card";
 import BlogCard from "../components/BlogCard";
 import ThemeCard from "../components/ThemeCard";
+import ReviewCard from "../components/ReviewCard";
 
 export const Home = () => {
   const navbar = [
@@ -58,10 +59,11 @@ export const Home = () => {
         </div>
       </div>
       <ProductCard />
-      <div>
+      <div className="flex flex-col items-center">
         <Card />
         <BlogCard />
         <ThemeCard />
+        <ReviewCard />
       </div>
     </div>
   );
