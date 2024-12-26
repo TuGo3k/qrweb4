@@ -19,7 +19,7 @@ const ProductCard = () => {
       loop={true}
     >
         {foods.map((el, index) =>(<SwiperSlide key={index}>
-        <div className=" flex items-center justify-center bg-[#f9f7ed]">
+        <div className="overflow-hidden flex items-center justify-center bg-[#f9f7ed]">
           <div className="block relative border-4 border-[#c2b59d] w-[166px] bg-white rounded-md shadow-md overflow-hidden ">
             {/* Badge */}
             <div className="absolute rotate-45 py-1 px-10 top-3  right-[-45px] bg-green-100 text-green-600 text-sm font-semibold  rounded-full">
@@ -59,6 +59,7 @@ const ProductCard = () => {
       </SwiperSlide>))}
       
     </Swiper>
+    
   );
 };
 

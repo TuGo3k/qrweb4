@@ -7,7 +7,9 @@ import { PiForkKnifeFill } from "react-icons/pi";
 import { IoUmbrella } from "react-icons/io5";
 import { useState } from "react";
 import ProductCard from "../components/ProductCard";
-
+import {Card} from "../components/Card";
+import BlogCard from "../components/BlogCard";
+import ThemeCard from "../components/ThemeCard";
 
 export const Home = () => {
   const navbar = [
@@ -22,7 +24,7 @@ export const Home = () => {
     <div className="bg-[#f7f3ee]">
       <div className="w-full bg-[#e2ded3] flex flex-col justify-center items-center text-center py-5">
         <h1 className="flex font-bold text-[24px] gap-2">
-          <span className="flex text-green-500">
+          <span className="flex text-[#a0bd57]">
             <GiCoffeeCup className="size-8" />
             Bella
           </span>
@@ -55,7 +57,12 @@ export const Home = () => {
           </button>
         </div>
       </div>
-        <ProductCard />
+      <ProductCard />
+      <div>
+        <Card />
+        <BlogCard />
+        <ThemeCard />
+      </div>
     </div>
   );
 };

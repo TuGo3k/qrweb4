@@ -15,8 +15,8 @@ const AnimatedSwiper = () => {
     <div className=" text-white  flex justify-center items-center">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
-        navigation={true}
-        pagination={{ clickable: true }}
+        // navigation={true}
+        // pagination={{ clickable: true }}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
