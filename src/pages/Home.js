@@ -11,6 +11,8 @@ import {Card} from "../components/Card";
 import BlogCard from "../components/BlogCard";
 import ThemeCard from "../components/ThemeCard";
 import ReviewCard from "../components/ReviewCard";
+import HotelHours from "../components/HotelHours";
+import ContactUs from "../components/ContactUs";
 
 export const Home = () => {
   const navbar = [
@@ -64,6 +66,8 @@ export const Home = () => {
         <BlogCard />
         <ThemeCard />
         <ReviewCard />
+        <HotelHours />
+        <ContactUs />
       </div>
     </div>
   );

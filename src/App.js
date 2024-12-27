@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Home } from './pages/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
-import ProductCard from './components/ProductCard';
+import MapComponent from './components/MapComponent';
 function App() {
   return (
     <Router>
@@ -11,7 +11,7 @@ function App() {
       </Routes>
       
     </Router>
-    // <ProductCard />
+    // <MapComponent />
   );
 }
 

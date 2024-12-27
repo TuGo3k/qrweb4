@@ -19,7 +19,7 @@ const BlogCard = () => {
     <div className="container flex flex-col items-center justify-center py-15">
       <h3 className="text-[#a0bd57] text-[20px] font-[lobster] float-left mb-4">Recent Blog</h3>
       {blogs.map((el, index) => (
-        <div key={index} className="bg-cream p-6 rounded-lg border-b border-slate-300 text-center w-[200px]">
+        <div key={index} className="bg-cream p-6  border-b border-slate-300 text-center w-[200px]">
           {/* Blog Section Title */}
 
           {/* Image Section */}
@@ -32,7 +32,7 @@ const BlogCard = () => {
           </div>
 
           {/* Blog Title */}
-          <h4 className="text-brown text-[20px]  font-[roboto-condensed] mb-2 text-[#A58039] ">
+          <h4 className="text-brown font-semibold text-[20px] font-[roboto-condensed] mb-2 text-[#A58039] text-wrap">
             {el.title}
           </h4>
 
